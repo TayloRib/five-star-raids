@@ -28,8 +28,21 @@ body {
 }
 
  header{
+    margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: #3b6437;
   margin-right: initial;
+  padding-left: 0;
+}
+
+.anniraid{
+    max-height: 80%;
+    width: 120%;
+    margin-left: -60px;
+    align-self: center;
+    position: static;
+
 }
 
 
@@ -37,19 +50,13 @@ body {
 .topbar {
     color: #bfd6b7;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: thin;
     position: static;
     margin-left: 290px;
+    line-height: 1;
 }
 
-.herba-sprite {
-        display: inline-block;
-        height: 50px;
-        width: 50px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
 #navbar ul {
   height: 88%;
@@ -86,6 +93,65 @@ h2 {
   margin-left: 290px;
   padding: 20px;
   margin-bottom: 110px;
+}
+
+#table1 {
+    width: 100%;
+    background-color: #184d24;
+    border: 4px solid black;
+    
+}
+
+#table2 {
+    width: 100%;
+    background-color: #c3d5c0;
+    border: 4px solid black;
+    border-spacing: 0;
+
+    
+}
+
+caption{
+    border: 3px solid black;
+    background-color: #3b6437;
+    border-bottom: 0;
+
+}
+
+.rowbox {
+    border: 4px solid black;
+    height: 10px;
+
+}
+
+
+.pokesprite, .pokesprite2, .pokesprite3{
+    display: inline-flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pokesprite3 #pokes{
+    height: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#pokes{
+    border: 4px solid black;
+    background-color: #3b6437;
+}
+
+
+.divider{
+    border: 2px solid #092f12;
 }
 
 section article {
