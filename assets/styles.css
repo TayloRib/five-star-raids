@@ -2,12 +2,14 @@
 html,
 body {
   min-width: 290px;
-    color: #bfd6b7;
+  color: #bfd6b7;
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.5;
   background-color:#092f12;
   margin: 0;
 }
+
+
 
 #navbar {
   font-size: .9em;
@@ -26,7 +28,6 @@ body {
   background-color: #3b6437;
 }
 
-
 #navbar ul {
   height: 88%;
   padding: 0;
@@ -34,48 +35,97 @@ body {
   overflow-x: hidden;
 }
 
-#navbar li {
-  color: #4d4e53;
-  border-top: 1px solid;
-  list-style: none;
-  position: relative;
-  width: 100%;
+.navbar1{
+  border-top: 3px solid #021b00;
 }
 
-#navbar a {
+.navbar2{
+  border-top: 3px solid #021b00;
+  border-bottom: 3px solid #021b00;
+}
+
+#navbar a, #navtable a{
   display: block;
-  padding: 10px 30px;
   color: #bfd6b7;
   text-decoration: none;
   cursor: pointer;
 }
 
+#navbar a{
+  padding: 10px 30px;
+}
+
+#navtable{
+  width: 100%;
+  color: #bfd6b7;
+  text-align: center;
+  align-items: center;
+  font-size: small;
+  line-height: 2;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+#navtable td{
+  border: 2px solid #021b00;
+  background-color: #184d24;
+}
+
+.mobiletop{
+  display: block;
+  position: center;
+  margin-left: 0;
+  margin-top: 15px;
+  background-color: #3b6437;
+  position: static;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
 header{
-  margin-top: 20px;
-padding-top: 5px;
-padding-bottom: 5px;
-background-color: #3b6437;
-margin-right: initial;
-padding-left: 0;
+  text-align: center;
+  margin-top: 15px;
+  background-color: #3b6437;
+  position: static;
+  padding-left: 0;
+  padding-right: 0;
+  border-top: 4px solid #021b00;
+  border-bottom: 4px solid #021b00;
+
 }
 
 .anniraid{
   max-height: 80%;
-  width: 105%;
-  margin-left: -60px;
-  align-self: right;
-  position: static;
+  width: 100%;
+  position: relative;
+  border: 3px solid #021b00;
+}
+
+.sixstar{
+  max-height: 80%;
+  width: 100%;
+  position: relative;
+  border: 3px solid #021b00;
 
 }
 
 .topbar {
+  margin-left: 250px;
   color: #bfd6b7;
   text-align: center;
   font-size: 1.2em;
   font-weight: thin;
   position: static;
-  margin-left: 290px;
   line-height: 1;
+  padding-bottom: 3px;
+}
+
+h3{
+  padding-left: 10px;
 }
 
 h2 {
@@ -85,9 +135,9 @@ h2 {
 }
 
 #main-doc {
-  position: absolute;
+  position: relative;
   margin-left: 290px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   margin-bottom: 110px;
 }
 
@@ -96,14 +146,24 @@ h2 {
     color: black;
     text-align: center;
     background-color: #c3d5c0;
-    border: 4px solid black;
     margin-bottom: 40px;
+    align-items: center;
+    font-size: small;
 }
 
-thead tr.rowbox{
-  font-size: 90%;
-  word-break: break-all;
-  white-space: normal;
+#table1{
+  border: 4px solid black;
+}
+
+#table2{
+  border: 3px solid black;
+}
+
+
+td{
+  position: relative;
+  font-weight: bold;
+
 }
 
 .cap1, .cap2, .cap3, .cap4, .cap5, .cap6, .cap7 {
@@ -112,37 +172,43 @@ thead tr.rowbox{
     font-size: 1.2em;
 }
 
-.cap1{
+.cip1, .cip2, .cip3, .cip4, .cip5, .cip6, .cip7{
+    border: 3px solid black;
+    border-bottom: 0;
+    font-size: 1.5em;
+}
+
+.cap1, .cip1{
   color: #131300;
   background-color: #cd7f32;
 }
 
-.cap2{
+.cap2, .cip2{
   color: #131300;
   background-color: #768c9d;
 }
 
-.cap3{
+.cap3, .cip3{
   color: #131300;
   background-color: #dfc42a;
 }
 
-.cap4{
+.cap4, .cip4{
   color: #131300;
   background-color: #ddf5f8;
 }
 
-.cap5{
+.cap5, .cip5{
   color: #131300;
   background-color: #557522;
 }
 
-.cap6{
+.cap6, .cip6{
   color: #131300;
   background-color: #ddc3d5;
 }
 
-.cap7{
+.cap7, .cip7{
   color: #131300;
   background-color: #9c2b2b;
 }
@@ -218,7 +284,8 @@ figcaption {
 
 
 
-@media only screen and (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
   /* For mobile phones: */
   #navbar ul {
     height: 100%;
@@ -237,10 +304,14 @@ figcaption {
     z-index: 1;
   }
 
+  .mobileonly{
+    display: relative;
+  }
+
   #main-doc {
     position: relative;
     margin-left: 0px;
-    margin-top: 270px;
+    margin-top: 0px;
   }
 
   .table1, .table2{
@@ -249,6 +320,19 @@ figcaption {
 
   .nomobile {
     display:none;
+  }
 }
 
+
+@media screen and (min-width: 480px) {
+  .nomobile{
+    display: relative;
+  }
+  
+  .mobileonly{ 
+    display: none;
+  }
+
+  
 }
+
