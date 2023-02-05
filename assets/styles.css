@@ -141,6 +141,69 @@ h2 {
   margin-bottom: 20px;
 }
 
+#table3 {
+  display: inline-block
+  width: 20%;
+  color: black;
+  text-align: center;
+  margin-bottom: 40px;
+  align-items: center;
+  border: 0;
+  align: left;
+}
+
+.table-container { 
+  display: inline-block; 
+  vertical-align: top; 
+}
+
+thead.bughead{
+  background-color: #565711;
+}
+
+.typebub2 {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: center;
+  max-height: 100%;
+}
+
+.bughead{
+  background-color: #565711;
+  font-size: large;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.bughead{
+  background-color: #565711;
+}
+
+.goodmatch1{
+  background-color: #3b6437;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.goodmatch2{
+  background-color: #73a76e;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.badmatch1{
+  background-color: #7a2d2d;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.badmatch2{
+  background-color: #b67575;
+  text-align: center;
+  border: 2px solid black;
+}
+
 #table1, #table2 {
     width: 100%;
     color: black;
@@ -219,7 +282,7 @@ td{
     height: 10px; 
 }
 
-.pokesprite3 .pokes{
+.pokesprite3 .pokes {
     display: inline-flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -285,6 +348,7 @@ figcaption {
 
 
 
+
 @media screen and (max-width: 480px) {
   /* For mobile phones: */
   #navbar ul {
@@ -336,3 +400,43 @@ figcaption {
   
 }
 
+/* 
+Storage Space for new type tables
+
+<div class="table-container">
+      <table id="table3">
+        <thead class="bughead">
+          <caption class="bughead">Bug Type</caption>
+        <tr>
+          <td class="goodmatch1">Good Match-up</td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/fire_bubble.png" alt="fire type"></img></td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/flying_bubble.png" alt="flying type"></img></td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/rock_bubble.png" alt="rock type"></img></td>
+        </tr>
+        <tr>
+          <td class="badmatch1">Bad Match-up</td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/grass_bubble.png" alt="grass type"></img></td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/psychic_bubble.png" alt="psychic type"></img></td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/dark_bubble.png" alt="dark type"></img></td>
+        </tr>
+        </thead>
+    </table>
+
+      <table id="table4">
+        <thead class="darkhead">
+          <caption class="darkhead">Bug Type</caption>
+        <tr>
+          <td class="goodmatch1">Good Match-up</td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/fire_bubble.png" alt="fire type"></img></td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/flying_bubble.png" alt="flying type"></img></td>
+          <td class="goodmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/rock_bubble.png" alt="rock type"></img></td>
+        </tr>
+        <tr>
+          <td class="badmatch1">Bad Match-up</td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/grass_bubble.png" alt="grass type"></img></td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/psychic_bubble.png" alt="psychic type"></img></td>
+          <td class="badmatch2"><img class="typebub2" width="40px" src="./assets/pokemon_types/dark_bubble.png" alt="dark type"></img></td>
+        </tr>
+      </thead>
+    </table>
+    </div> */
