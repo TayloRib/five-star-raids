@@ -142,7 +142,7 @@ h2 {
 }
 
 #table3 {
-  display: inline-block
+  display: inline-block;
   width: 20%;
   color: black;
   text-align: center;
@@ -402,6 +402,8 @@ figcaption {
 
 /* 
 Storage Space for new type tables
+
+bro fix my folder name :'(
 
 <div class="table-container">
       <table id="table3">
