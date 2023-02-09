@@ -324,11 +324,18 @@ a:hover {
 
 table#typing {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 0;
   display: inline-block;
   border-spacing: 0;
-  
+}
+
+table#typing2 {
+  width: 100%;
+  margin-bottom: 0;
+  border: 0;
+  display: inline-block;
+  border-spacing: 0;
 }
 
 
@@ -350,11 +357,11 @@ table#typing {
 }
 
 .steelhead, .waterhead, .normalhead, .poisonhead, .psychichead, .rockhead, .ghosthead, .grasshead, .groundhead, .icehead, .bughead, .darkhead, .dragonhead, .electrichead, .fairyhead, .fightinghead, .firehead, .flyinghead{
-  font-size: large;
   text-align: center;
   background-color: #c3d5c0;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
+  line-height: 0;
 }
 
 .midspacer {
@@ -557,6 +564,10 @@ padding-top: 20px;
   .nomobile {
     display:none;
   }
+}
+
+.steelhead, .waterhead, .normalhead, .poisonhead, .psychichead, .rockhead, .ghosthead, .grasshead, .groundhead, .icehead, .bughead, .darkhead, .dragonhead, .electrichead, .fairyhead, .fightinghead, .firehead, .flyinghead{
+padding: 0;
 }
 
 
